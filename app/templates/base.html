@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>Welcome to todo-list</title>
+    </head>
+    <body>
+        <div>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('add') }}">Add</a>
+            <hr>
+            {% block content %}
+            {% endblock %}
+        </div>
+    </body>
+</html>
